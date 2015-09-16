@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityFragment">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="显示一个简短的Toast"
+        android:id="@+id/btn_showToastShort" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="显示一个较长的Toast"
+        android:id="@+id/btn_showToastLong" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="显示一个带有图片的的Toast"
+        android:id="@+id/btn_showToastImage" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="显示一个自定义View的的Toast"
+        android:id="@+id/btn_showToastCustomView" />
+</LinearLayout>
