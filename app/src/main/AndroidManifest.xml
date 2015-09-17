@@ -10,6 +10,54 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.mypegasus.learntoastandnotification.intent.action.Main" />
+                <!--<action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification" >
+
+            <intent-filter>
+                <action android:name="com.example.mypegasus.learntoastandnotification.intent.action.NOTIFICATION" />
+                <!--<action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:label="ResultActivity"
+            android:parentActivityName=".Main2Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main2Activity" />
+        </activity>
+        <activity
+            android:name=".Result2Activity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_result2"
+            android:launchMode="singleTask"
+            android:taskAffinity="" >
+        </activity>
+        <activity
+            android:name=".SpecialActivity"
+            android:label="@string/title_activity_special" >
             <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,8 +65,8 @@
             </intent-filter>-->
         </activity>
         <activity
-            android:name=".NotificationActivity"
-            android:label="@string/title_activity_notification" >
+            android:name=".BigViewNotificationActivity"
+            android:label="@string/title_activity_big_view_notification" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

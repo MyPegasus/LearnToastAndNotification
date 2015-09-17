@@ -1,25 +1,23 @@
 package com.example.mypegasus.learntoastandnotification;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class NotificationActivity extends AppCompatActivity {
-
-    public static final String ACTION = "com.example.mypegasus.learntoastandnotification.intent.action.NOTIFICATION";
+public class ResultActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notification);
-    }
+        setContentView(R.layout.activity_result);
 
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_notification, menu);
+        getMenuInflater().inflate(R.menu.menu_regular, menu);
         return true;
     }
 
